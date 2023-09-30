@@ -1,0 +1,82 @@
+#----------------------------------------------------------------------------------------------#
+# ██████╗░░█████╗░███╗░░██╗██████╗░░█████╗░░██████╗░██╗░░░██╗███████╗░██████╗████████╗░██████╗ #
+# ██╔══██╗██╔══██╗████╗░██║██╔══██╗██╔══██╗██╔═══██╗██║░░░██║██╔════╝██╔════╝╚══██╔══╝██╔════╝ #
+# ██████╔╝███████║██╔██╗██║██║░░██║███████║██║██╗██║██║░░░██║█████╗░░╚█████╗░░░░██║░░░╚█████╗░ #
+# ██╔═══╝░██╔══██║██║╚████║██║░░██║██╔══██║╚██████╔╝██║░░░██║██╔══╝░░░╚═══██╗░░░██║░░░░╚═══██╗ #
+# ██║░░░░░██║░░██║██║░╚███║██████╔╝██║░░██║░╚═██╔═╝░╚██████╔╝███████╗██████╔╝░░░██║░░░██████╔╝ #
+# ╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚══╝╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░░╚═════╝░╚══════╝╚═════╝░░░░╚═╝░░░╚═════╝░ #
+#----------------------------------------------------------------------------------------------#
+Verison: 1.0.1
+# This is the prefix that will be shown every time you type the command. If you would like to use hex colors please
+# use <##FFFFFF> as so just change to which color you would like. This does work with normal minecraft colors as well.
+General:
+    Command-Prefix: "<#13F94E>&l● Qᴜᴇsᴛs &8&l➤"
+    Completed: "&7(<#F34D37>&lLOCKED&7)"
+    Uncompleted: "&7(<#8BF337>&lUNLOCKED&7)"
+    Not-Enough-To-Claim: "&8[<#F34D37>&l✖&8]"
+    Enough-To-Claim: "&8[<#8BF337>&l✔&8]"
+
+# Under this node you'll find everything that is related to the Quests GUI.
+Quests-GUI:
+    # This gui is for when you run the main command
+    Open-GUI:
+        rows: 4
+        title: "             &7Quests"
+        buttons:
+            # This button will be used to open the player quests they currently have.
+            Player-Quests:
+                slot: 11
+                name: "&bPlayer Quests"
+                material: writable book
+                lore:
+                - ""
+            # This button will be used to open the main quest line that you have created
+            Main-Quests:
+                slot: 15
+                name: "&bMain Quests"
+                material: Crafting Table
+                lore:
+                - ""
+            # This will just close the players inventory
+            Close:
+                slot: 27
+                name: "&cClose"
+                material: barrier
+                lore:
+                - ""
+            # This is where all the information for the player to understand how to use this will be found
+            Information:
+                slot: 31
+                name: "&7Information"
+                material: book
+                lore:
+                - ""
+                - ""
+            # Theses items will be used as background item to add some type of themes
+            Filler:
+                1:
+                    enabled: true
+                    material: Gray Stained Glass Pane
+                    fill: false
+                    slots:
+                    - 28
+                    - 29
+                    - 30
+                    - 32
+                    - 33
+                    - 34
+                    - 35
+
+
+    # This GUI will be show once a player clicks on the Player-Quests slot under Open-GUI buttons.
+    Player-Quests:
+        rows:
+        name: ""
+
+    # This GUI will be show once a player clicks on the Main-Quests slot under Open-GUI buttons.
+    Main-Quests:
+        rows:
+        name: ""
+
+
+  
